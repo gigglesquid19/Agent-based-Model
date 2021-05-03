@@ -9,13 +9,15 @@ Look how easy it is to use:
 3) Within Agentbasedmodel:
           import agentframework
 4) Run >
+5) Choose the value of model variables
 
 Features
 --------------------
 - Choose the number of deer
 - Choose the number of wolves
-- Choose how close agents must be for interaction (neighborhood)
 - Choose the number of model iterations
+- Choose how close agents must be for interaction (neighborhood value)
+
 
 Contribution
 ---------------------
@@ -30,7 +32,7 @@ The creator can be reached by emailing: ----------@gmail.com
 
 License
 ---------------------
-This project is licensed under the --- license.
+This project is licensed under the BSD license.
 
 ---------------------------------------------------------------------
 Programming for Geographic Information Analyses - University of Leeds
