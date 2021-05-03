@@ -1,7 +1,7 @@
 # Agent-based Model
 -------------------
 -------------------
-This model is a small-scale representation of the biotic interactions between a population of deer and wolves in an enclosed environment.
+This model is a small-scale representation of biotic interactions between a population of deer and wolves in an enclosed, 2-D environment.
 
 Look how easy it is to use:
 1) Download and open Agentbasedmodel.py
