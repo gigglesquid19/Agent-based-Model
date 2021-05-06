@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>agentframeworkdocs module &#8212; abmdocs 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-agentframeworkdocs">
+<span id="agentframeworkdocs-module"></span><h1>agentframeworkdocs module<a class="headerlink" href="#module-agentframeworkdocs" title="Permalink to this headline">¶</a></h1>
+<p>Created on Mon Mar 29 10:38:23 2021</p>
+<p>&#64;author: Ciaran</p>
+<dl class="py class">
+<dt id="agentframeworkdocs.Deer">
+<em class="property">class </em><code class="sig-prename descclassname">agentframeworkdocs.</code><code class="sig-name descname">Deer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">environment</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A Class to represent the Deer Agents</p>
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">environment</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Creates the attributes associated with the Deer Class</p>
+</div></blockquote>
+<dl class="simple">
+<dt>i<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. The ID number of the Wolf agent</p>
+</dd>
+<dt>y<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. The Y coordinate of the agent from web</p>
+</dd>
+<dt>x<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. The X coordinate of the agent from web</p>
+</dd>
+<dt>environment<span class="classifier">TYPE LIST</span></dt><dd><p>DESCRIPTION. A list of pixel RGB values</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>store</strong> (<em>Int</em>) – the y coordinate</p></li>
+<li><p><strong>color</strong> (<em>String</em>) – the color of the Deer agent</p></li>
+<li><p><strong>deers</strong> (<em>List</em>) – A list of the other deer</p></li>
+<li><p><strong>wolves</strong> (<em>List</em>) – A list of other wolves</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.distance_between">
+<code class="sig-name descname">distance_between</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">deer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.distance_between" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Calculates the Euclidean Distance between each deer agent</p>
+</div></blockquote>
+<dl class="simple">
+<dt>deer<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. Individual Deer no. from the list Deers</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>TYPE FLOAT</dt><dd><p>DESCRIPTION. Euclidean Distance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.eat">
+<code class="sig-name descname">eat</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.eat" title="Permalink to this definition">¶</a></dt>
+<dd><p>As long as environment square has a value, eat portion and store</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates x2 random numbers which determine movement direction</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.pop_deers">
+<code class="sig-name descname">pop_deers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">deers</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.pop_deers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Populates the list of deers that a specific deer is aware of</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Deer.share_with_neighbours">
+<code class="sig-name descname">share_with_neighbours</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">neighbourhood</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Deer.share_with_neighbours" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Check deer proximity, if less than neighborhood,
+combines the x2 stores, calculates the mean average 
+and re-distributes this new store to each</p>
+</div></blockquote>
+<dl class="simple">
+<dt>neighbourhood<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. The neighbourhood value specified by the user</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="agentframeworkdocs.Wolf">
+<em class="property">class </em><code class="sig-prename descclassname">agentframeworkdocs.</code><code class="sig-name descname">Wolf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A Class to represent the Wolf Agents</p>
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">i</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Creates the attributes associated with the Wolf Class</p>
+</div></blockquote>
+<dl class="simple">
+<dt>i<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. The ID number of the agent</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_x</strong> (<em>Int</em>) – the x coordinate</p></li>
+<li><p><strong>_y</strong> (<em>Int</em>) – the y coordinate</p></li>
+<li><p><strong>store</strong> (<em>Float</em>) – the store of the agent</p></li>
+<li><p><strong>color</strong> (<em>String</em>) – the color of the agent</p></li>
+<li><p><strong>deers</strong> (<em>List</em>) – the deer list</p></li>
+<li><p><strong>wolves</strong> (<em>List</em>) – the wolf list</p></li>
+<li><p><strong>energy</strong> (<em>Int</em>) – the energy of the deeer</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.distance_between">
+<code class="sig-name descname">distance_between</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">deer</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.distance_between" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Calculates the Euclidean Distance between wolf and each deer agent</p>
+</div></blockquote>
+<dl class="simple">
+<dt>deer<span class="classifier">TYPE INT</span></dt><dd><p>DESCRIPTION. Individual Deer no. from the list Deers</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>TYPE FLOAT</dt><dd><p>DESCRIPTION. Euclidean Distance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.eat">
+<code class="sig-name descname">eat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">neighbourhood</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.eat" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Loop through individual wolf lists of deer proximity, if closer
+than neighborhood value, remove deer and restore Wolf energy</p>
+</div></blockquote>
+<dl class="simple">
+<dt>neighbourhood<span class="classifier">TYPE Int</span></dt><dd><p>DESCRIPTION. the Neighbourhood Value specified by user</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>TYPE Int</dt><dd><p>DESCRIPTION. -1 if nothing eaten or deer index number if eaten</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates x2 random numbers which determine movement direction
+while determining the energy cost of the movement</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.pop_deers">
+<code class="sig-name descname">pop_deers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">deers</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.pop_deers" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Populates the list of deers that a specific wolf is aware of</p>
+</div></blockquote>
+<dl class="simple">
+<dt>deers<span class="classifier">TYPE List</span></dt><dd><p>DESCRIPTION. The list of deer agents</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.pop_wolves">
+<code class="sig-name descname">pop_wolves</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wolves</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.pop_wolves" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Populates the list of wolves that a specific wolf is aware of</p>
+</div></blockquote>
+<dl class="simple">
+<dt>wolves<span class="classifier">TYPE List</span></dt><dd><p>DESCRIPTION. The list of wolf agents</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="agentframeworkdocs.Wolf.starve">
+<code class="sig-name descname">starve</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agentframeworkdocs.Wolf.starve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loop through individual wolf lists, if energy depleted remove starved wolf</p>
+<dl class="simple">
+<dt>TYPE Int</dt><dd><p>DESCRIPTION. -1 if no wolf starved or wolf index number if starved</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">abmdocs</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Ciaran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/agentframeworkdocs.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
