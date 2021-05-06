@@ -1,4 +1,5 @@
 For document access >View on Github<
+For web access https://gigglesquid19.github.io/Agent-based-Model/
 
 Contents
 -------------------
