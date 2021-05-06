@@ -1,5 +1,3 @@
-# Agent-based Model
-----------------------------------------------------------------------------------------------------
 For document access >View on Github<
 
 Contents
