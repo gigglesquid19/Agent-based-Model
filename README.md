@@ -2,8 +2,7 @@
 -------------------
 Contents
 ------------------
-1) README <--
-* To view as a website: https://gigglesquid19.github.io/Agent-based-Model/
+1) README https://gigglesquid19.github.io/Agent-based-Model/
 3) License File
 4) Model Documentation https://gigglesquid19.github.io/Agent-based-Model/agentframeworkdocs.html
 
