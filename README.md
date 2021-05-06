@@ -1,14 +1,14 @@
 # Agent-based Model
 ----------------------------------------------------------------------------------------------------
 For document access >View on Github<
------------------------------------------------------------------------------------------------------
+
 Contents
------------------------------------------------------------------------------------------------------
-1) README
-2) License File
-3) Agent-based Model.py (contains the main abm source code)
-4) agentframework.py (contains Classes and Functions)
-5) Source Code Documentation https://gigglesquid19.github.io/Agent-based-Model/agentframeworkdocs.html
+-------------------
+- README
+- License File
+- Agent-based Model.py (contains the main abm source code)
+- agentframework.py (contains Classes and Functions)
+- Source Code Documentation https://gigglesquid19.github.io/Agent-based-Model/agentframeworkdocs.html
 
 Software Outline
 --------------------
